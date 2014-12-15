@@ -6,8 +6,8 @@
      * Buraya kadar geldiysen bi el atarsın artık, 
      *
      * Bağışlar için BTC ve LTC adresleri aşağıda, sevindirin şu garibi.
-     * LTC:
-     * BTC: 
+     * LTC: LZP363BJqSTBMacEshHas49fapF58CmbTL
+     * BTC: 15qha9XF6PK1ZMUkzCbdjpTHzP9NvPq2DS
      */
     
     function TrollBox() {            
