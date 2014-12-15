@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Ekşi duyuru için troll dedected ",
   "description": "Ekşi duyuru troll dedected eklentisi, çok teknolojik.",
-  "version": "0.3",
+  "version": "0.4",
   "author": "Timu Eren<selamtux@gmail.com>",
   "homepage_url": "https://github.com/selam/troll-dedected",
   "permissions": [
