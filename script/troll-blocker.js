@@ -53,18 +53,19 @@
 	  if(name) {
 	    if($(this).hasClass("add-to-trolls")){      	    
 		self.db.transaction(function(tx){
-		  tx.executeSql("INSERT INTO "+self.table_name+" VALUES ('"+name+"')");
+		  console.log("INSERT INTO "+self.table_name+" VALUES (?)", [name]);
+		  tx.executeSql("INSERT INTO "+self.table_name+" VALUES (?)", [name], this.errorHandler, this.errorHandler);
 		  $e.removeClass("add-to-trolls");
 		  $e.addClass("remove-from-trolls");
 		  $e.attr("title", self.remove_troll_title);
 		  self.trollList.push(name);
 		  self.hideTrolls();		
-		});
+		}.bind(this));
 	      
 	      return;
 	    }	
 	    self.db.transaction(function(tx){
-		  tx.executeSql("DELETE FROM "+self.table_name+" WHERE troll = '"+name+"'");
+		  tx.executeSql("DELETE FROM "+self.table_name+" WHERE troll = ?", [name]);
 		  $e.addClass("add-to-trolls");
 		  $e.removeClass("remove-from-trolls");
 		  $e.attr("title", self.add_troll_title);
@@ -121,7 +122,8 @@
       },
  
       errorHandler: function(transaction, error) {
-	
+	alert("??");
+	console.log(error);
       },
       
       addBannedClasses: function(elem) {
