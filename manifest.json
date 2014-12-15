@@ -4,6 +4,7 @@
   "description": "Ekşi duyuru troll dedected eklentisi, çok teknolojik.",
   "version": "0.2",
   "author": "Timu Eren<selamtux@gmail.com>",
+  "homepage_url": "https://github.com/selam/troll-dedected",
   "permissions": [
     "tabs",
     "http://www.eksiduyuru.com/",
