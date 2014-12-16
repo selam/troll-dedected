@@ -22,7 +22,7 @@
         <dict>
                 <key>Scripts</key>
                 <dict>
-                        <key>Start</key>
+                        <key>End</key>
                         <array>
                             <string>jquery-2.1.1.js</string>
                             <string>troll-blocker.js</string>

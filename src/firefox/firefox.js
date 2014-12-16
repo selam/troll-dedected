@@ -9,5 +9,5 @@ pageMod.PageMod({
   contentStyleFile  : [
                        data.url('troll-blocker.css')
                       ],
-  contentScriptWhen : 'end'
+  contentScriptWhen : 'ready'
 })

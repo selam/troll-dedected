@@ -3,7 +3,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 
   chrome.tabs.executeScript(tabId, {
       code  : 'var _injected = window.trollDedectorInjected; window.trollDedectorInjected = true; _injected;',
-    runAt : 'document_start'
+    runAt : 'document_idle'
   }, function(res) {
     if (chrome.runtime.lastError || // don't continue if error (i.e. page isn't in permission list)
         res[0]) // value of `injected` above: don't inject twice
