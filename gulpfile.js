@@ -64,7 +64,7 @@ gulp.task('opera:nex', function() {
 
 gulp.task('safari', function() {
     return merge(
-       pipe(['./src/troll-blocker.js', './src/troll-blocker.css', 
+       pipe(['./libs/**/*', './src/troll-blocker.js', './src/troll-blocker.css', 
             './src/safari/**/*'], './tmp/safari/troll-blocker.safariextension/')
     )
 })
