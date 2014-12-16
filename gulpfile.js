@@ -1,9 +1,6 @@
 var gulp   = require('gulp')
 , path   = require('path')
 , merge  = require('event-stream').merge
-, series = require('stream-series')
-, map    = require('map-stream')
-, Crx    = require('crx')
 , $      = require('gulp-load-plugins')()
 
 /**
