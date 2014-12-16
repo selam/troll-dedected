@@ -1,0 +1,16 @@
+{
+  "name": "troll-dedector",
+  "title": "Ekşi duyuru için troll dedected",
+  "id": "jid1-fzOnQL4jVqtJEA",
+  "description": "Ekşi duyuru için troll dedected",
+  "author": "Timu Eren",
+  "homepage": "https://github.com/selam/troll-dedected",
+  "lib": "lib",
+  "main": "lib/firefox",
+  "data": "data",
+  "license": "GNU/GPLv3",
+  "version": "0.0.5",
+  "permissions": {
+    "cross-domain-content": ["http://www.eksiduyuru.com"]
+  }
+} 
