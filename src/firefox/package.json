@@ -9,7 +9,7 @@
   "main": "lib/firefox",
   "data": "data",
   "license": "GNU/GPLv3",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "permissions": {
     "cross-domain-content": ["http://www.eksiduyuru.com"]
   }

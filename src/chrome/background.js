@@ -3,19 +3,24 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 
   chrome.tabs.executeScript(tabId, {
       code  : 'var _injected = window.trollDedectorInjected; window.trollDedectorInjected = true; _injected;',
-    runAt : 'document_idle'
+    runAt : 'document_start'
   }, function(res) {
     if (chrome.runtime.lastError || // don't continue if error (i.e. page isn't in permission list)
         res[0]) // value of `injected` above: don't inject twice
       return
 
     var cssFiles = [
-        'troll-blocker.css'
+        'css/troll-blocker.css'
     ]
 
     var jsFiles = [
         'jquery-2.1.1.js',
-        'troll-blocker.js'
+        'troll-blocker.js',
+        'FileSaver.js',
+        'jszip.js',
+        'handlebars-v2.0.0.js',
+        'export-messages.js',      
+        'app.js'
     ]
 
     eachTask([

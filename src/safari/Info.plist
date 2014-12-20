@@ -13,9 +13,9 @@
         <key>CFBundleInfoDictionaryVersion</key>
         <string>6.0</string>
         <key>CFBundleShortVersionString</key>
-        <string>0.0.5</string>
+        <string>0.0.6</string>
         <key>CFBundleVersion</key>
-        <string>0.0.5</string>
+        <string>0.0.6</string>
         <key>Chrome</key>
         <dict/>
         <key>Content</key>
@@ -26,11 +26,16 @@
                         <array>
                             <string>jquery-2.1.1.js</string>
                             <string>troll-blocker.js</string>
+                            <string>FileSaver.js</string>
+                            <string>jszip.js</string>
+                            <string>handlebars-v2.0.0.js</string>
+                            <string>export-messages.js</string>      
+                            <string>app.js</string>   
                         </array>
                 </dict>
                 <key>Stylesheets</key>
                 <array>
-                    <string>troll-blocker.css</string>
+                    <string>css/troll-blocker.css</string>
                 </array>
     <key>Whitelist</key>
     <array>

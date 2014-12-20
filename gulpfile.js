@@ -2,6 +2,8 @@ var gulp   = require('gulp')
 , path   = require('path')
 , merge  = require('event-stream').merge
 , $      = require('gulp-load-plugins')()
+, libs   = ['./libs/**/*', './src/*.js', './src/chrome/**/*']
+, csses  = ['./src/css/**/*']
 
 /**
  * Public tasks
@@ -29,7 +31,8 @@ gulp.task('dist', ['build'], function(cb) {
 // Chrome
 gulp.task('chrome', function() {
     return merge(
-        pipe(['./libs/**/*', './src/troll*', './src/chrome/**/*'], './tmp/chrome/')
+        pipe(libs, './tmp/chrome/'),
+        pipe(csses, './tmp/chrome/css')         
     )
 })
 
@@ -61,8 +64,7 @@ gulp.task('opera:nex', function() {
 
 gulp.task('safari', function() {
     return merge(
-       pipe(['./libs/**/*', './src/troll-blocker.js', './src/troll-blocker.css', 
-            './src/safari/**/*'], './tmp/safari/troll-blocker.safariextension/')
+       pipe(libs.concat(['./src/safari/**/*']), './tmp/safari/troll-blocker.safariextension/')
     )
 })
 
@@ -70,7 +72,8 @@ gulp.task('safari', function() {
 
 gulp.task('firefox',  function() {
     return merge(       
-        pipe(['./libs/**/*', './src/troll-blocker.js', './src/troll-blocker.css'], './tmp/firefox/data'),
+        pipe(['./libs/**/*', './src/*.js'], './tmp/firefox/data'),
+        pipe(csses, './tmp/firefox/data/css'),
         pipe(['./src/firefox/firefox.js'], './tmp/firefox/lib'),
         pipe('./src/firefox/package.json', './tmp/firefox')
     )
