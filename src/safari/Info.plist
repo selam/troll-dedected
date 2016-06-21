@@ -13,7 +13,7 @@
         <key>CFBundleInfoDictionaryVersion</key>
         <string>6.0</string>
         <key>CFBundleShortVersionString</key>
-        <string>0.0.7</string>
+        <string>0.0.8</string>
         <key>CFBundleVersion</key>
         <string>0.0.7</string>
         <key>Chrome</key>
@@ -40,6 +40,9 @@
     <key>Whitelist</key>
     <array>
       <string>http://www.eksiduyuru.com/*</string>
+      <string>https://www.eksiduyuru.com/*</string>
+      <string>http://eksiduyuru.com/*</string>
+      <string>https://eksiduyuru.com/*</string>
     </array>
         </dict>
         <key>Description</key>
@@ -53,6 +56,7 @@
                         <key>Allowed Domains</key>
                         <array>
                             <string>www.eksiduyuru.com</string>
+                            <string>eksiduyuru.com</string>
                         </array>
                         <key>Include Secure Pages</key>
                         <true/>
