@@ -6,7 +6,10 @@
   "author": "Timu Eren<selamtux@gmail.com>",
   "homepage_url": "https://github.com/selam/troll-dedected",
   "permissions": [
-    "http://www.eksiduyuru.com/*"
+    "http://www.eksiduyuru.com/*",
+    "https://www.eksiduyuru.com/*",
+    "http://eksiduyuru.com/*",
+    "https://eksiduyuru.com/*"
   ],
   "icons": {
    },
