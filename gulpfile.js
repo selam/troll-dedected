@@ -80,7 +80,7 @@ gulp.task('firefox',  function() {
 })
 
 gulp.task('firefox:xpi', function(cb) {
-    $.run('cd ./tmp/firefox && cfx xpi --output-file=../../dist/firefox.xpi').exec(cb)
+    $.run('cd ./tmp/firefox && jpm xpi--addon-dir .').exec(cb)
 })
 
 /**
